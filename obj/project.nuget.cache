@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "l5j+2w6iFuy6o5k4LgmXIV4+Z2+IfW19guJQ4Xw4Q2wy6iAd8n6o76F9Tu6e/L9ofaFVJ3+dZ1+SDYybmwiKDQ==",
+  "dgSpecHash": "UflyG+qo3Q1/s9kD7AAXJ5ES45ZnlvnFHJNts2LeO3VHVPqZSzIPDgWkIbLFEtcLHt3x1jbEm1bOOkQtBfyxuw==",
   "success": true,
   "projectFilePath": "C:\\Users\\monke\\Code\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\monke\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

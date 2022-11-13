@@ -24,3 +24,6 @@ C:\Users\monke\Code\MyFirstAzureWebApp\obj\Debug\net6.0\refint\MyFirstAzureWebAp
 C:\Users\monke\Code\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.pdb
 C:\Users\monke\Code\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.genruntimeconfig.cache
 C:\Users\monke\Code\MyFirstAzureWebApp\obj\Debug\net6.0\ref\MyFirstAzureWebApp.dll
+C:\Users\monke\Code\MyFirstAzureWebApp\bin\Debug\net6.0\lib\resources\sampledata.json
+C:\Users\monke\Code\MyFirstAzureWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\monke\Code\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.csproj.CopyComplete

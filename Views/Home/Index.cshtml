@@ -1,8 +1,25 @@
-﻿@{
+﻿@model MyFirstAzureWebApp.Models.Brands
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table>
+       @foreach (var item in Model.brands){
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Brand)
+    </td>
+    @foreach (var model in item.Models)
+    {
+     <td>
+    @Html.DisplayFor(modelItem => model)
+    </td>    
+    }
+</tr>
+
+       } 
+    </table> 
 </div>

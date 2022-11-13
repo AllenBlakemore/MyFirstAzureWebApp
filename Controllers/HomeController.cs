@@ -1,6 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MyFirstAzureWebApp.Models;
+using System.Net;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace MyFirstAzureWebApp.Controllers;
 
@@ -15,7 +18,20 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        //return View();
+        // var webClient = new WebClient();
+        //        var json = webClient.DownloadString(@"C:\Users\monke\Code\MyFirstAzureWebApp\lib\resources\sampledata.json");
+ //##Get string from json file             
+               FileStream jsonStream = System.IO.File.OpenRead(@"C:\Users\monke\Code\MyFirstAzureWebApp\lib\resources\sampledata.json"); 
+               string json;
+                using(var sr = new StreamReader(jsonStream))
+                {
+                json = sr.ReadToEnd();
+                }
+ //##Deserialize that string               
+                var brands = JsonConvert.DeserializeObject<Brands>(json);
+ //##Send that deserialized json to the view               
+            return View(brands);
     }
 
     public IActionResult Privacy()
