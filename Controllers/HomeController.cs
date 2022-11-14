@@ -22,7 +22,7 @@ public class HomeController : Controller
         // var webClient = new WebClient();
         //        var json = webClient.DownloadString(@"C:\Users\monke\Code\MyFirstAzureWebApp\lib\resources\sampledata.json");
  //##Get string from json file             
-               FileStream jsonStream = System.IO.File.OpenRead(@"C:\Users\monke\Code\MyFirstAzureWebApp\lib\resources\sampledata.json"); 
+               FileStream jsonStream = System.IO.File.OpenRead(@".\lib\resources\sampledata.json"); 
                string json;
                 using(var sr = new StreamReader(jsonStream))
                 {
